@@ -21,3 +21,12 @@ window.onscroll=()=>{
  topBtn.style.display=window.scrollY>300?"block":"none";
 }
 topBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+
+function changeImage() {
+ const img = document.getElementById("appleImage");
+ if (img.src.includes("apple1.jpeg")) {
+ img.src = "src/apple2.jpeg";
+} else {
+ img.src = "src/apple1.jpeg";
+    }
+}
